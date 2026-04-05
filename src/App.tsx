@@ -1,5 +1,4 @@
 
-import './App.css'
 import Cart from './assets/cart'
 function App() {
 
