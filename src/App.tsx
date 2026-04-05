@@ -1,5 +1,5 @@
 
-import Cart from './assets/cart'
+import Cart from './cart'
 function App() {
 
   return (

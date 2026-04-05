@@ -11,7 +11,7 @@ export default defineConfig({
       name: "cart",
       filename: "remoteEntry.js",
       exposes: {
-        "./CartPage": "./src/cart.tsx"
+        "./Cart": "./src/cart.tsx"
       },
       shared: ["react", "react-dom"]
     })
