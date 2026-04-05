@@ -34,10 +34,5 @@ jobs:
 
       - name: Deploy build to S3
         run: |
-          aws s3 sync dist s3://mfe-cart --delete
+          aws s3 sync dist s3://mfe-container-repo/cart --delete
 
-      - name: Invalidate CloudFront cache
-        run: |
-          aws cloudfront create-invalidation \
-            --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} \
-            --paths "/*"
